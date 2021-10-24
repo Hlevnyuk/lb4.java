@@ -6,14 +6,8 @@ public class EmployeeService {
         this.employees = employee;
     }
     void printEmployees(){
-        for (Employee employee : this.employees){
-            if(employee instanceof Developer){
-                System.out.println(((Developer)employee).toString());
-            }else if(employee instanceof Manager){
-                System.out.println(((Manager)employee).toString());
-            }else if(employee instanceof Designer){
-                System.out.println(((Designer)employee).toString());
-            }
+        for (Employee employee : employees){
+            System.out.println(employee);
         }
     }
     int calculateSalaryAndBonus(){
